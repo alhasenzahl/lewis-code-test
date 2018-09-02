@@ -1,0 +1,644 @@
+@charset "UTF-8";
+
+/*Universal/Base Styles*/
+
+html, body {
+	font-family: 'Lato';
+	font-size: 15px;
+	font-weight: 400;
+	color: #4d4f56;
+	width: 100%;
+	margin: 0px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #ff3434;
+	border: none;
+	border-radius: 3px;
+	font-size: 1em;
+	font-family: 'Lato';
+}
+
+input[type=text] {
+	font-family: 'Lato';
+	color: #9b9da0;
+	font-size: 1em;
+	padding-left: 20px;
+}
+
+ul li {
+	list-style: none;
+	display: inline;
+}
+
+/* ========== Mobile Styles ==========*/
+
+/* Header Section */
+
+/* Base Styles */
+
+.header-section {
+	width: 100%;
+	background-image: url("../img/concert-audience-big.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.header-menu {
+	width: 88%;
+	margin: auto;
+	max-width: 350px;
+}
+
+.search-fields {
+	max-width: 350px;
+	width: 88%;
+	margin: auto;
+}
+
+/* Top Header/Nav Menu */
+
+.header-menu {
+	padding-top: 16px;
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: center;
+}
+
+/* Logo */
+
+.logo {
+	width: 20%;
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: flex-start;
+}
+
+.logo-img {
+	float: left;
+}
+
+/* Nav Menu */
+
+.nav-menu {
+	overflow: auto;
+	width: 80%;
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: flex-end;
+}
+
+.nav-menu nav ul li a {
+	color: #fff;
+	margin-top: -5px;
+	text-decoration: none;
+}
+
+.nav-menu nav, .nav-menu nav ul li a {
+	float: left;
+}
+
+	.nav-menu nav ul li:nth-child(1), .nav-menu nav ul li:nth-child(2) {
+		display: none;
+	}
+
+	.nav-menu nav ul li:nth-child(3) {
+		margin-right: 16px;
+	}
+
+.nav-menu button {
+	background-color: #fff;
+	height: 40px;
+	width: 90px;
+}
+
+.nav-menu button a {
+	text-decoration: none;
+	color: #4d4f56;
+}
+
+/* Bottom Header/Search Events Section */
+
+.search-fields h1 {
+	font-size: 2.4em;
+	margin-top: 144px;
+	color: #fff;
+	text-shadow: 0 1 6 rgba(0, 0, 0, .3);
+}
+
+/* Input Search Fields */
+
+.fav-artist {
+	height: 50px;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+}
+
+.budget-box, .location-box {
+	width: 49%;
+	float: left;
+	position: relative;
+}
+
+.budget-box {
+	margin-left: 2%;
+}
+
+.budget-box::after {
+	content: url("../img/arrow.png");
+	position: absolute;
+	top: 27px;
+	right: 10px;
+}
+
+.location-box::after {
+	content: url("../img/arrow.png");
+	position: absolute;
+	top: 27px;
+	right: 10px;
+}
+
+.location-input, .budget-input {
+	height: 50px;
+	width: 100%;
+	border: none;
+	margin: 12px 0;
+	border-radius: 3px;
+	font-family: 'Lato';
+	font-size: 1em;
+	color: #9B9DA0;
+	padding-left: 20px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+/* Find Events Button */
+
+.search-fields button {
+	height: 50px;
+	width: 100%;
+	margin-bottom: 27px;
+}
+
+.search-fields button a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* Featured Concerts Section */
+
+/* Base Styles */ 
+
+.concerts {
+	width: 100%;
+}
+
+.concert-nav, .main-concert, .sub-concert {
+	width: 88%;
+	margin: auto;
+	max-width: 350px;
+}
+
+/* Active Search Nav Menu */ 
+
+.find-concerts {
+	margin-top: 34px;
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: flex-start;
+	margin-bottom: 7.5px;
+}
+
+.find-concerts li a {
+	margin-right: 18px;
+	text-decoration: none;
+	color: #4D4F56;
+}
+
+	.find-concerts li:nth-child(1) {
+		margin-left: -40px;
+	}
+
+.find-concerts::after {
+	content: url("../img/active-line.png");
+	margin: 10.5px 0px 37.5px -273px;
+}
+
+/* Top 3 Featured Concerts */
+
+.concert-info {
+	overflow: auto;
+}
+
+/* Concert Images */
+
+.concert-img {
+	width: 100%;
+	padding-bottom: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	margin-bottom: 18px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+.concert-country {
+	background-image: url("../img/concert1-img-big.png");
+}
+
+.concert-jazz {
+	background-image: url("../img/concert2-img.png");
+}
+
+.concert-electronic {
+	background-image: url("../img/concert3-img.png");
+}
+
+/* Concert Info Text */
+
+.location-float, .budget-float {
+	float: left;
+	width: 50%;
+	border-top: 1px solid rgba(179, 181, 190, 0.4);
+	margin-bottom: 40px;
+}
+
+.location-float {
+	border-right: 1px solid rgba(179, 181, 190, 0.4);
+}
+
+.budget-float h3, .budget-float h2 {
+	margin-left: 17px;
+}
+
+.concert-info h2 {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	color: #b3b5be;
+}
+
+.band-name {
+	font-size: 1.2em;
+	margin-top: 4px;
+}
+
+.band-name a {
+	text-decoration: none;
+	color: #4D4F56;
+}
+
+.city, .price-range {
+	font-size: 1.06em;
+	margin-top: 6px;
+}
+
+/* Discover More Button */
+
+.concert-button-container {
+	width: 88%;
+	margin: auto;
+	max-width: 450px;
+	padding: 10px 0px 50px 0px;
+	text-align: center;
+}
+
+.concerts button {
+	width: 188px;
+	height: 50px;
+	margin: auto;
+}
+
+.concerts button a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* Bottom Footer Section */
+
+.footer-section {
+	width: 100%;
+	border-top: 1px solid rgba(179, 181, 190, 0.4);
+	padding-bottom: 30px;
+}
+
+/* Social Media List */
+
+.footer-list1 {
+	width: 88%;
+	margin: 24px 6% 0px 6%;
+}
+
+.social-links {
+	width: 70%;
+	margin: 0 15% 0 15%;
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: center;
+}
+
+.social-links li {
+	margin-right: 13px;
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: center;
+}
+
+.social-links li:nth-child(1) {
+	margin-left: -6%;
+}
+
+/* Copyright List */
+
+.footer-list2 {
+	font-size: 0.86em;
+	width: 100%;
+	color: #b3b5be;
+}
+
+.copyright-list {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: center;
+	width: 88%;
+	margin: 16px 6% 0 6%;
+}
+
+.copyright-list li {
+	margin-right: 18px;
+	font-size: 0.866em;
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: center;
+}
+
+.copyright-list li:nth-child(1) {
+	margin-left: -6%;
+}
+
+/* ========== Tablet Styles ========== */
+
+@media (min-width: 768px) {
+/* Header Scetion */
+
+/* Base Styles */
+	
+.header-menu {
+	width: 90%;
+	max-width: 688px;
+	padding-top: 21px;
+}
+	
+.search-fields {
+	padding-bottom: 136px;
+	width: 75%;
+	max-width: 580px;
+}
+	
+/* Top Header/Nav Menu */
+
+.header-menu {
+	padding-top: 21px;
+}
+	
+.nav-menu nav ul li a {
+	margin-left: 18px;		
+}
+	
+	.nav-menu nav ul li:nth-child(3) {
+		margin-right: 36px;
+	}
+	
+	.nav-menu nav ul li:nth-child(1), .nav-menu nav ul li:nth-child(2) {
+		display: inline;
+	}
+	
+/* Bottom Header/Search Events Section */
+	
+.search-fields h1 {
+	font-size: 3em;
+	text-align: center;
+	margin: 160px 0px 32px 0px;
+}
+	
+/* Input Search Fields */
+	
+.location-input, .budget-input {
+	width: 100%;
+}
+	
+.budget-input {
+	margin-left: -1%;
+}
+	
+.budget-box, .location-box {
+	width: 32%;
+}
+	
+/* Find Events Button */
+	
+.search-fields button {
+	width: 33%;
+	margin-left: 1%;
+	margin-top: 12px;
+}
+	
+/* Featured Concerts Section */
+	
+/* Base Styles */
+	
+.concert-nav, .main-concert {
+	width: 90%;
+	max-width: 689px;
+}
+
+/* Top 3 Featured Concerts */	
+
+/* Concert Images */	
+	
+.concert1 {
+	padding-bottom: 50%;
+}
+	
+.concert-two, .concert-three {
+	padding-bottom: 80%;
+	border: 1px solid orange;
+}
+	
+.concert3 {
+	margin-left: 34px;
+	border: 1px solid black;
+}
+	
+/* Bottom Two Concerts */
+	
+.sub-concert-container {
+	overflow: auto;
+	max-width: 689px;
+	margin: auto;
+	border: 1px solid blue;
+}
+	
+.sub-concert {
+	width: 327px;
+	float: left;
+	margin: auto;
+	border: 1px solid green;
+}
+	
+/* Concert Info Text */
+	
+.band-name {
+	font-size: 1.33em;
+}
+	
+.city, .price-range {
+	font-size: 1.2em;
+}
+	
+/* Bottom Footer Section */
+
+.footer-section {
+	overflow: auto;
+}
+	
+/* Social Media List */
+
+.footer-list1 {
+	justify-content: flex-end;
+	width: 30%;
+	margin: 24px 6% 0 0;
+	float: right;
+}
+	
+.social-links {
+	justify-content: flex-end;
+	margin: 0 0 0 30%;
+}
+	
+.social-links li {
+	justify-content: flex-end;
+}
+	
+.social-links li:nth-child(3) {
+	margin-right: 0;
+}
+	
+/* Copyright List */
+	
+.footer-list2 {
+	width: 70%;
+	justify-content: flex-start;
+	float: left;
+	margin-top: -40px;
+}
+
+.copyright-list {
+	justify-content: flex-start;
+}
+
+.copyright-list li {
+	justify-content: flex-start;
+}
+	
+}
+
+/* ========== Desktop Styles ========== */
+
+@media (min-width: 1280px) {
+
+/* Header Section */	
+	
+/* Base Styles */
+	
+.header-menu {
+	width: 94%;
+	max-width: 1200px;
+}
+	
+/* Bottom Header/Search Events Section */
+
+.search-fields h1 {
+	margin: 199px 0px 58px 0px;
+}
+	
+/* Featured Concerts Section */
+	
+/* Base Styles */
+	
+.concerts {
+	width: 86%;
+	margin: auto;
+	max-width: 1111px;
+	border: 1px solid red;
+}
+	
+.concert-nav {
+	width: 100%;
+	margin: 70px 0 0 0;
+}
+	
+/* Top 3 Featured Concerts */
+
+/* Concert Images */
+	
+.concert1 {
+	padding-bottom: 80%;
+}
+	
+.concert2 {
+	margin-right: -3px;
+}
+	
+/* Main Concert */
+	
+.main-concert {
+	max-width: 345px;
+	float: left;
+	margin-right: 34px;
+}
+	
+/* Bottom Two Concerts */
+	
+.sub-concert-container {
+	max-width: 766px;
+}
+
+.sub-concert {
+	width: 48%;
+	max-width: 345px;
+}
+	
+
+	
+}
