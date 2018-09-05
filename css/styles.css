@@ -492,12 +492,10 @@ ul li {
 	
 .concert-two, .concert-three {
 	padding-bottom: 80%;
-	border: 1px solid orange;
 }
 	
 .concert3 {
-	margin-left: 34px;
-	border: 1px solid black;
+	margin-left: 33px;
 }
 	
 /* Bottom Two Concerts */
@@ -506,14 +504,11 @@ ul li {
 	overflow: auto;
 	max-width: 689px;
 	margin: auto;
-	border: 1px solid blue;
 }
 	
 .sub-concert {
 	width: 327px;
 	float: left;
-	margin: auto;
-	border: 1px solid green;
 }
 	
 /* Concert Info Text */
@@ -600,7 +595,6 @@ ul li {
 	width: 86%;
 	margin: auto;
 	max-width: 1111px;
-	border: 1px solid red;
 }
 	
 .concert-nav {
@@ -616,8 +610,8 @@ ul li {
 	padding-bottom: 80%;
 }
 	
-.concert2 {
-	margin-right: -3px;
+.concert3 {
+	margin-left: 32px;
 }
 	
 /* Main Concert */
@@ -625,7 +619,7 @@ ul li {
 .main-concert {
 	max-width: 345px;
 	float: left;
-	margin-right: 34px;
+	margin-right: 32px;
 }
 	
 /* Bottom Two Concerts */
